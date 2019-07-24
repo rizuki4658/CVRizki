@@ -1,0 +1,1551 @@
+@font-face {
+   font-family: "font digital";
+   src: url('views/css/inifont.ttf');
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'font digital';
+}
+body{
+	font-family: 'font digital';
+}
+header{
+	padding: 1% 5%;
+}
+.bungkus{
+	width: 100%;
+	border-bottom: 0.5px solid #c7c7c7;
+}
+.navigation{
+	width: 100%;
+	font-size: 25px;
+	padding: 0.5%; 
+}
+#link_fisrt > a{
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 1.5%;
+	color: rgba(29, 29, 29, 1);
+}
+#link_fisrt > a:hover{
+	color: rgba(29, 29, 29, 0.8);
+}
+#link_fisrt{
+	text-align: left;
+	display: inline-block;
+	width: 50%;
+}
+#link_last{
+	text-align: right;
+	display: inline-block;
+	width: 49.6%;
+}
+.link_last{
+	color: #1d1d1d;
+	text-decoration: none;
+	margin-left: 1.5%;
+	font-size: 20px;
+}
+.link_last:hover{
+	color: rgba(29, 29, 29, 0.8);
+}
+.container{
+	/*background-color: red;*/
+	margin-top: 3%;
+	margin-bottom: 5%;
+	width: 100%;
+}
+.biodatanya{
+	padding: 1%;
+	width: 35%;
+	font-size: 18px;
+	border: 1px solid #c7c7c7;
+	border-radius: 5px;
+	display: none;
+}
+.letter{
+	padding: 1%;
+	width: 60%;
+	font-size: 20px;
+	border: 1px solid #c7c7c7;
+	border-radius: 5px;
+	display: none;
+}
+.curiculum{
+	text-align: right;
+	padding: 1%;
+	width: 80%;
+	font-size: 20px;
+	border: 1px solid #c7c7c7;
+	border-radius: 5px;
+	display: none;
+}
+.form-letter{
+	text-align: justify;
+	padding: 1%;
+	width: 50%;
+	font-size: 20px;
+	border: 1px solid #c7c7c7;
+	border-radius: 5px;
+	display: none;
+}
+.form-cv{
+	text-align: justify;
+	padding: 1%;
+	width: 70%;
+	font-size: 20px;
+	border: 1px solid #c7c7c7;
+	border-radius: 5px;
+	display: none;
+}
+.personal-info{
+	text-align: justify;
+	padding: 1%;
+	width: 98%;
+	font-size: 20px;
+	border-top: 1px solid #c7c7c7;
+	border-bottom: 1px solid #c7c7c7;
+	position: absolute; width: 68%; 
+
+}
+iframe{
+	margin-top: 1%;
+	width: 100%;
+	height: 355px;
+	border: 1px solid #c7c7c7;
+}
+.text{
+	display: none;
+	font-size: 30px;
+}
+.text > .btn{
+	font-size: 20px;
+}
+.img{
+	width: 45%;
+  	height: auto;
+	border-radius: 5%;
+}
+.imgs{
+	width: 25%;
+  	height: auto;
+	border-radius: 5%;
+}
+.myInfo{
+	text-align: justify;
+}
+
+.btn{
+	text-decoration: none;
+	margin-top: 5px;
+	padding: 2px 4px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.btn-default{
+	 background-color: transparent;
+	 color: #1d1d1d;
+	 border: 1px solid #1d1d1d;
+	 border-radius: 4px;
+}
+.btn-default:hover{
+	 background-color: #1d1d1d;
+	 color: #ffffff;
+}
+.btn-light{
+	 background-color: rgba(29, 29, 29, 1);
+	 color: #ffffff;
+	 border: 1px solid rgba(29, 29, 29, 1);
+	 border-radius: 4px;
+}
+.btn-light:hover{
+	 background-color: rgba(29, 29, 29, 0.8);
+	 color: rgba(225, 225, 225, 1);
+}
+.input-letters{
+	margin-top: 1%;
+	font-size: 20px;
+	width: 96%;
+	scroll-behavior: auto;
+	resize: none;
+	padding: 1%;
+}
+.label-control{ 
+	width: 47.5%; 
+	display: inline-block;
+}
+.address{
+	resize: none;
+}
+.form-control{
+	width: 98%;
+	display: block;
+	font-size: 18px;
+	padding: 4px 4px;
+	margin-bottom: 1%;
+}
+table{
+	width: 100%;
+	border: none;
+}
+.tables-bordered {
+	width: 100%; 
+  	border-collapse: collapse;
+}
+.tables-bordered, .th-bordered, .td-bordered{
+	padding: 0.5% 0.5%;
+  	border: 1px solid #c7c7c7;
+}
+.form-controls{
+	width: 98.5%;
+	display: inline-block;
+	font-size: 18px;
+	padding: 4px 4px;
+}
+.selector{
+	width: 15%;
+}
+.konten_fade{
+	display: none;
+}
+.footer{
+	position: fixed;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 1%;
+  	text-align: center;
+  	border-top: 1px solid #c7c7c7;
+  	background-color: #1d1d1d;
+  	color: #ffffff;
+  	font-size: 20px;
+}
+#error{
+	text-align: center;
+	color: red;
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 360px){
+	
+	/* General */
+	.bungkus{
+		width: 100%;
+		border-bottom: 0.2px solid #c7c7c7;
+	}
+	.navigation{
+		width: 100%;
+		padding: 0.5%; 
+	}
+	#link_fisrt > a{
+		font-size: 5px;
+		margin-right: 1.5%;
+	}
+	.link_last{
+		text-decoration: none;
+		margin-left: 1.5%;
+		font-size: 5px;
+	}
+	#link_fisrt{
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+	}
+	#link_last{
+		text-align: right;
+		display: inline-block;
+		width: 47.95%;
+	}
+	.text{
+		font-size: 6px;
+	}
+	.konten_fade{
+		font-size: 4px;
+	}
+	.biodatanya{
+		border: 0.2px solid #c7c7c7;
+	}
+	.btn{
+		font-size: 4px;
+		padding: 0.5px;
+	}
+	.btn-light, .btn-default, .btn-dark{
+		border: 0.2px solid #1d1d1d;
+		border-radius: 1px;
+	}
+
+	/* End General */
+
+
+	/* Letter */
+	.letter{
+		padding: 1%;
+		font-size: 5px;
+		border: 0.2px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.input-letters{
+		font-size: 4px; 
+	}
+
+	.form-letter{
+		padding: 1%;
+		width: 50%;
+		font-size: 4px;
+		border: 0.2px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.label-control{
+		font-size: 4px;
+	}
+	.form-control{
+		font-size: 4px;
+		padding: 0;
+		width: 97%;
+		margin-bottom: 0.2%;
+	}
+	.address{
+		width: 98.5%;
+	}
+	/* End Letter */
+
+
+
+
+
+	/* Cv */
+
+	.curiculum{
+		border: 0.2px solid #c7c7c7;
+		border-radius: 2px;
+	}
+	iframe{
+		border: 0.2px solid #c7c7c7;
+	}
+	.form-cv{
+		border: 0.2px solid #c7c7c7;
+	}
+	#btn_info, #btn_exp, #btn_edu, #btn_skill, #btn_project, #btn_certificate, #btn_summary{
+		text-align: justify;
+		display: block;
+		width: 100%;
+	}
+	hr{
+		border: 0.2px solid #c7c7c7;
+	}
+	.personal-info{
+		font-size: 4px;
+		border-top: 0.2px solid #c7c7c7;
+		border-bottom: 0.2px solid #c7c7c7;
+	}
+	.form-controls{
+		padding: 0px;
+		font-size: 4px;
+	}
+	.selector{
+		width: 25%;
+	}
+	.nomor{
+		font-size: 4px;
+	}
+	.current{
+		display: block;
+		font-size: 4px;
+	}
+	.from_to{
+		font-size: 3px;
+	}
+	#info_work_ex > div, #info_education > div, #info_skill > div, #info_project > div, #info_certificate > div{
+		display: inline-block;
+	}
+	#start_edu > .label-control{
+		display: inline;
+	}
+	.start_edu{
+		font-size: 3px;
+	}
+	.certification_month{
+		font-size: 3px;
+	}
+	/* End CV */
+
+
+
+	.footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 0.1%;
+		border-top: 0.2px solid #c7c7c7;
+		font-size: 4px;
+	}
+	#error{
+		font-size: 4px;
+	}
+	table{
+		width: 100%;
+		font-size: 4px;
+	}
+}
+
+@media screen and (min-width: 361px) and (max-width: 667px){
+	
+	/* General */
+	.bungkus{
+		width: 100%;
+		border-bottom: 0.2px solid #c7c7c7;
+	}
+	.navigation{
+		width: 100%;
+		padding: 0.5%; 
+	}
+	#link_fisrt > a{
+		font-size: 7px;
+		margin-right: 1.5%;
+	}
+	.link_last{
+		text-decoration: none;
+		margin-left: 1.5%;
+		font-size: 7px;
+	}
+	#link_fisrt{
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+	}
+	#link_last{
+		text-align: right;
+		display: inline-block;
+		width: 47.95%;
+	}
+	.text{
+		font-size: 8px;
+	}
+	.konten_fade{
+		font-size: 6px;
+	}
+	.biodatanya{
+		border: 0.2px solid #c7c7c7;
+	}
+	.btn{
+		font-size: 7px;
+		padding: 0.5px 1px;
+	}
+	.btn-light, .btn-default, .btn-dark{
+		border: 0.2px solid #1d1d1d;
+		border-radius: 1.5px;
+	}
+
+	/* End General */
+
+
+	/* Letter */
+	.letter{
+		padding: 1%;
+		font-size: 7px;
+		border: 0.2px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.input-letters{
+		font-size: 7px; 
+	}
+
+	.form-letter{
+		padding: 1%;
+		width: 50%;
+		font-size: 7px;
+		border: 0.2px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.label-control{
+		font-size: 7px;
+	}
+	.form-control{
+		font-size: 7px;
+		padding: 0;
+		width: 97%;
+	}
+	.address{
+		width: 98.5%;
+	}
+	/* End Letter */
+
+
+
+
+
+	/* Cv */
+
+	.curiculum{
+		border: 0.2px solid #c7c7c7;
+		border-radius: 2px;
+	}
+	iframe{
+		border: 0.2px solid #c7c7c7;
+	}
+	.form-cv{
+		border: 0.2px solid #c7c7c7;
+	}
+	#btn_info, #btn_exp, #btn_edu, #btn_skill, #btn_project, #btn_certificate, #btn_summary{
+		text-align: justify; 
+	}
+	hr{
+		border: 0.2px solid #c7c7c7;
+	}
+	.personal-info{
+		font-size: 7px;
+		border-top: 0.2px solid #c7c7c7;
+		border-bottom: 0.2px solid #c7c7c7;
+	}
+	.form-controls{
+		padding: 0px;
+		font-size: 7px;
+	}
+	.selector{
+		width: 25%;
+	}
+	.nomor{
+		font-size: 7px;
+	}
+	.current{
+		font-size: 7px;
+	}
+	#info_work_ex, #info_education, #info_skill, #info_project, #info_certificate{
+		height: auto;
+		font-size: 7px;
+	}
+	#info_work_ex > div, #info_education > div, #info_skill > div, #info_project > div, #info_certificate > div{
+		display: block;
+		margin: 0px 0px;
+		padding: 0px 0px;
+	}
+	#start_edu > .label-control{
+		display: inline;
+	}
+	.start_edu{
+		font-size: 5px;
+	}
+	.certification_month{
+		font-size: 5px;
+	}
+	/* End CV */
+
+
+
+	.footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 0.3%;
+		border-top: 0.2px solid #c7c7c7;
+		font-size: 6px;
+	}
+	#error{
+		font-size: 7px;
+	}
+	table{
+		width: 100%;
+		font-size: 7px;
+	}
+}
+
+@media screen and (min-width: 668px) and (max-width: 736px){
+	
+	/* General */
+	.bungkus{
+		width: 100%;
+		border-bottom: 0.3px solid #c7c7c7;
+	}
+	.navigation{
+		width: 100%;
+		padding: 0.5%; 
+	}
+	#link_fisrt > a{
+		font-size: 10.5px;
+		margin-right: 1.5%;
+	}
+	.link_last{
+		text-decoration: none;
+		margin-left: 1.5%;
+		font-size: 10.5px;
+	}
+	#link_fisrt{
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+	}
+	#link_last{
+		text-align: right;
+		display: inline-block;
+		width: 47.95%;
+	}
+	.text{
+		font-size: 15px;
+	}
+	.konten_fade{
+		font-size: 10.5px;
+	}
+	.biodatanya{
+		border: 0.3px solid #c7c7c7;
+	}
+	.btn{
+		font-size: 10.5px;
+		padding: 0.5px 1px;
+	}
+	.btn-light, .btn-default, .btn-dark{
+		border: 0.3px solid #1d1d1d;
+		border-radius: 1.5px;
+	}
+
+	/* End General */
+
+
+	/* Letter */
+	.letter{
+		padding: 1%;
+		font-size: 7px;
+		border: 0.3px solid #c7c7c7;
+		border-radius: 2px;
+		display: none;
+	}
+	.input-letters{
+		font-size: 10.5px; 
+	}
+
+	.form-letter{
+		padding: 1%;
+		width: 50%;
+		font-size: 10.5px;
+		border: 0.3px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.label-control{
+		font-size: 10.5px;
+	}
+	.form-control{
+		font-size: 10.5px;
+		padding: 0;
+		width: 97%;
+	}
+	.address{
+		width: 98.5%;
+	}
+	/* End Letter */
+
+
+
+
+
+	/* Cv */
+
+	.curiculum{
+		border: 0.3px solid #c7c7c7;
+		border-radius: 3px;
+	}
+	iframe{
+		border: 0.3px solid #c7c7c7;
+	}
+	.form-cv{
+		border: 0.3px solid #c7c7c7;
+	}
+	#btn_info, #btn_exp, #btn_edu, #btn_skill, #btn_project, #btn_certificate, #btn_summary{
+		text-align: justify; 
+	}
+	hr{
+		border: 0.3px solid #c7c7c7;
+	}
+	.personal-info{
+		font-size: 10.5px;
+		border-top: 0.3px solid #c7c7c7;
+		border-bottom: 0.3px solid #c7c7c7;
+	}
+	.form-controls{
+		padding: 0px;
+		font-size: 10.5px;
+	}
+	.selector{
+		width: 25%;
+	}
+	.nomor{
+		font-size: 10.5px;
+	}
+	.current{
+		font-size: 10.5px;
+	}
+	#info_work_ex, #info_education, #info_skill, #info_project, #info_certificate{
+		height: auto;
+		font-size: 10.5px;
+	}
+	#info_work_ex > div, #info_education > div, #info_skill > div, #info_project > div, #info_certificate > div{
+		display: block;
+		margin: 0px 0px;
+		padding: 0px 0px;
+	}
+	#start_edu > .label-control{
+		display: inline;
+	}
+	.start_edu{
+		font-size: 10.5px;
+	}
+	.certification_month{
+		font-size: 10.5px;
+	}
+	/* End CV */
+
+
+
+	.footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 0.7%;
+		border-top: 0.2px solid #c7c7c7;
+		font-size: 10px;
+	}
+	#error{
+		font-size: 10px;
+	}
+	table{
+		width: 100%;
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 737px) and (max-width: 860px){
+	
+	/* General */
+	.bungkus{
+		width: 100%;
+		border-bottom: 0.3px solid #c7c7c7;
+	}
+	.navigation{
+		width: 100%;
+		padding: 0.5%; 
+	}
+	#link_fisrt > a{
+		font-size: 10.5px;
+		margin-right: 1.5%;
+	}
+	.link_last{
+		text-decoration: none;
+		margin-left: 1.5%;
+		font-size: 10.5px;
+	}
+	#link_fisrt{
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+	}
+	#link_last{
+		text-align: right;
+		display: inline-block;
+		width: 47.95%;
+	}
+	.text{
+		font-size: 15px;
+	}
+	.konten_fade{
+		font-size: 10.5px;
+	}
+	.biodatanya{
+		border: 0.3px solid #c7c7c7;
+	}
+	.btn{
+		font-size: 10.5px;
+		padding: 0.5px 1px;
+	}
+	.btn-light, .btn-default, .btn-dark{
+		border: 0.3px solid #1d1d1d;
+		border-radius: 1.5px;
+	}
+
+	/* End General */
+
+
+	/* Letter */
+	.letter{
+		padding: 1%;
+		font-size: 7px;
+		border: 0.3px solid #c7c7c7;
+		border-radius: 2px;
+		display: none;
+	}
+	.input-letters{
+		font-size: 10.5px; 
+	}
+
+	.form-letter{
+		padding: 1%;
+		width: 50%;
+		font-size: 10.5px;
+		border: 0.3px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.label-control{
+		font-size: 10.5px;
+	}
+	.form-control{
+		font-size: 10.5px;
+		padding: 0;
+		width: 97%;
+	}
+	.address{
+		width: 98.5%;
+	}
+	/* End Letter */
+
+
+
+
+
+	/* Cv */
+
+	.curiculum{
+		border: 0.3px solid #c7c7c7;
+		border-radius: 3px;
+	}
+	iframe{
+		border: 0.3px solid #c7c7c7;
+	}
+	.form-cv{
+		border: 0.3px solid #c7c7c7;
+	}
+	#btn_info, #btn_exp, #btn_edu, #btn_skill, #btn_project, #btn_certificate, #btn_summary{
+		text-align: justify; 
+	}
+	hr{
+		border: 0.3px solid #c7c7c7;
+	}
+	.personal-info{
+		font-size: 10.5px;
+		border-top: 0.3px solid #c7c7c7;
+		border-bottom: 0.3px solid #c7c7c7;
+	}
+	.form-controls{
+		padding: 0px;
+		font-size: 10.5px;
+	}
+	.selector{
+		width: 25%;
+	}
+	.nomor{
+		font-size: 10.5px;
+	}
+	.current{
+		font-size: 10.5px;
+	}
+	#info_work_ex, #info_education, #info_skill, #info_project, #info_certificate{
+		height: auto;
+		font-size: 10.5px;
+	}
+	#info_work_ex > div, #info_education > div, #info_skill > div, #info_project > div, #info_certificate > div{
+		display: block;
+		margin: 0px 0px;
+		padding: 0px 0px;
+	}
+	#start_edu > .label-control{
+		display: inline;
+	}
+	.start_edu{
+		font-size: 10.5px;
+	}
+	.certification_month{
+		font-size: 10.5px;
+	}
+	/* End CV */
+
+
+
+	.footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 0.7%;
+		border-top: 0.2px solid #c7c7c7;
+		font-size: 10px;
+	}
+	#error{
+		font-size: 10.5px;
+	}
+	table{
+		width: 100%;
+		font-size: 10.5px;
+	}
+}
+
+@media screen and (min-width: 861px) and (max-width: 1024px){
+	
+	/* General */
+	.bungkus{
+		width: 100%;
+		border-bottom: 0.4px solid #c7c7c7;
+	}
+	.navigation{
+		width: 100%;
+		padding: 0.5%; 
+	}
+	#link_fisrt > a{
+		font-size: 13.5px;
+		margin-right: 1.5%;
+	}
+	.link_last{
+		text-decoration: none;
+		margin-left: 1.5%;
+		font-size: 13.5px;
+	}
+	#link_fisrt{
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+	}
+	#link_last{
+		text-align: right;
+		display: inline-block;
+		width: 47.95%;
+	}
+	.text{
+		font-size: 18.5px;
+	}
+	.konten_fade{
+		font-size: 13.5px;
+	}
+	.biodatanya{
+		border: 0.4px solid #c7c7c7;
+	}
+	.btn{
+		font-size: 13.5px;
+		padding: 0.5px 1px;
+	}
+	.btn-light, .btn-default, .btn-dark{
+		border: 0.4px solid #1d1d1d;
+		border-radius: 1.5px;
+	}
+
+	/* End General */
+
+
+	/* Letter */
+	.letter{
+		padding: 1%;
+		font-size: 7px;
+		border: 0.4px solid #c7c7c7;
+		border-radius: 2px;
+		display: none;
+	}
+	.input-letters{
+		font-size: 13.5px; 
+	}
+
+	.form-letter{
+		padding: 1%;
+		width: 50%;
+		font-size: 13.5px;
+		border: 0.4px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.label-control{
+		font-size: 13.5px;
+	}
+	.form-control{
+		font-size: 13.5px;
+		padding: 0;
+		width: 97%;
+	}
+	.address{
+		width: 98.5%;
+	}
+	/* End Letter */
+
+
+
+
+
+	/* Cv */
+
+	.curiculum{
+		border: 0.4px solid #c7c7c7;
+		border-radius: 3px;
+	}
+	iframe{
+		border: 0.4px solid #c7c7c7;
+	}
+	.form-cv{
+		border: 0.4px solid #c7c7c7;
+	}
+	#btn_info, #btn_exp, #btn_edu, #btn_skill, #btn_project, #btn_certificate, #btn_summary{
+		text-align: justify; 
+	}
+	hr{
+		border: 0.4px solid #c7c7c7;
+	}
+	.personal-info{
+		font-size: 13.5px;
+		border-top: 0.4px solid #c7c7c7;
+		border-bottom: 0.4px solid #c7c7c7;
+	}
+	.form-controls{
+		padding: 0px;
+		font-size: 13.5px;
+	}
+	.selector{
+		width: 25%;
+	}
+	.nomor{
+		font-size: 13.5px;
+	}
+	.current{
+		font-size: 13.5px;
+	}
+	#info_work_ex, #info_education, #info_skill, #info_project, #info_certificate{
+		height: auto;
+		font-size: 13.5px;
+	}
+	#info_work_ex > div, #info_education > div, #info_skill > div, #info_project > div, #info_certificate > div{
+		display: block;
+		margin: 0px 0px;
+		padding: 0px 0px;
+	}
+	#start_edu > .label-control{
+		display: inline;
+	}
+	.start_edu{
+		font-size: 13.5px;
+	}
+	.certification_month{
+		font-size: 13.5px;
+	}
+	/* End CV */
+
+
+
+	.footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 0.8%;
+		border-top: 0.2px solid #c7c7c7;
+		font-size: 13px;
+	}
+	#error{
+		font-size: 13px;
+	}
+	table{
+		width: 100%;
+		font-size: 13px;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1152px){
+	
+	/* General */
+	.bungkus{
+		width: 100%;
+		border-bottom: 0.4px solid #c7c7c7;
+	}
+	.navigation{
+		width: 100%;
+		padding: 0.5%; 
+	}
+	#link_fisrt > a{
+		font-size: 16px;
+		margin-right: 1.5%;
+	}
+	.link_last{
+		text-decoration: none;
+		margin-left: 1.5%;
+		font-size: 16px;
+	}
+	#link_fisrt{
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+	}
+	#link_last{
+		text-align: right;
+		display: inline-block;
+		width: 47.95%;
+	}
+	.text{
+		font-size: 25px;
+	}
+	.konten_fade{
+		font-size: 16px;
+	}
+	.biodatanya{
+		border: 0.4px solid #c7c7c7;
+	}
+	.btn{
+		font-size: 15px;
+		padding: 0.5px 5px;
+	}
+	.btn-light, .btn-default, .btn-dark{
+		border: 0.4px solid #1d1d1d;
+		border-radius: 1.5px;
+	}
+
+	/* End General */
+
+
+	/* Letter */
+	.letter{
+		padding: 1%;
+		font-size: 7px;
+		border: 0.4px solid #c7c7c7;
+		border-radius: 2px;
+		display: none;
+	}
+	.input-letters{
+		font-size: 16px; 
+	}
+
+	.form-letter{
+		padding: 1%;
+		width: 50%;
+		font-size: 16px;
+		border: 0.4px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.label-control{
+		font-size: 16px;
+	}
+	.form-control{
+		font-size: 16px;
+		padding: 0;
+		width: 97%;
+	}
+	.address{
+		width: 98.5%;
+	}
+	/* End Letter */
+
+
+
+
+
+	/* Cv */
+
+	.curiculum{
+		border: 0.4px solid #c7c7c7;
+		border-radius: 3px;
+	}
+	iframe{
+		border: 0.4px solid #c7c7c7;
+	}
+	.form-cv{
+		border: 0.4px solid #c7c7c7;
+	}
+	#btn_info, #btn_exp, #btn_edu, #btn_skill, #btn_project, #btn_certificate, #btn_summary{
+		text-align: justify; 
+	}
+	hr{
+		border: 0.4px solid #c7c7c7;
+	}
+	.personal-info{
+		font-size: 16px;
+		border-top: 0.4px solid #c7c7c7;
+		border-bottom: 0.4px solid #c7c7c7;
+	}
+	.form-controls{
+		padding: 0px;
+		font-size: 16px;
+	}
+	.selector{
+		width: 25%;
+	}
+	.nomor{
+		font-size: 16px;
+	}
+	.current{
+		font-size: 16px;
+	}
+	#info_work_ex, #info_education, #info_skill, #info_project, #info_certificate{
+		height: auto;
+		font-size: 16px;
+	}
+	#info_work_ex > div, #info_education > div, #info_skill > div, #info_project > div, #info_certificate > div{
+		display: block;
+		margin: 0px 0px;
+		padding: 0px 0px;
+	}
+	#start_edu > .label-control{
+		display: inline;
+	}
+	.start_edu{
+		font-size: 16px;
+	}
+	.certification_month{
+		font-size: 16px;
+	}
+	/* End CV */
+
+
+
+	.footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 0.9%;
+		border-top: 0.2px solid #c7c7c7;
+		font-size: 16px;
+	}
+	#error{
+		font-size: 16px;
+	}
+	table{
+		width: 100%;
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1153px) and (max-width: 1280px){
+	
+	/* General */
+	.bungkus{
+		width: 100%;
+		border-bottom: 0.5px solid #c7c7c7;
+	}
+	.navigation{
+		width: 100%;
+		padding: 0.5%; 
+	}
+	#link_fisrt > a{
+		font-size: 18px;
+		margin-right: 1.5%;
+	}
+	.link_last{
+		text-decoration: none;
+		margin-left: 1.5%;
+		font-size: 18px;
+	}
+	#link_fisrt{
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+	}
+	#link_last{
+		text-align: right;
+		display: inline-block;
+		width: 47.95%;
+	}
+	.text{
+		font-size: 25px;
+	}
+	.konten_fade{
+		font-size: 16px;
+	}
+	.biodatanya{
+		border: 0.5px solid #c7c7c7;
+	}
+	.btn{
+		font-size: 16px;
+		padding: 3px 5px;
+	}
+	.btn-light, .btn-default, .btn-dark{
+		border: 0.5px solid #1d1d1d;
+		border-radius: 4px;
+	}
+
+	/* End General */
+
+
+	/* Letter */
+	.letter{
+		padding: 1%;
+		font-size: 7px;
+		border: 0.5px solid #c7c7c7;
+		border-radius: 2px;
+		display: none;
+	}
+	.input-letters{
+		font-size: 18px; 
+	}
+
+	.form-letter{
+		padding: 1%;
+		width: 50%;
+		font-size: 18px;
+		border: 0.5px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.label-control{
+		font-size: 18px;
+	}
+	.form-control{
+		font-size: 18px;
+		padding: 0;
+		width: 97%;
+	}
+	.address{
+		width: 98.5%;
+	}
+	/* End Letter */
+
+
+
+
+
+	/* Cv */
+
+	.curiculum{
+		border: 0.5px solid #c7c7c7;
+		border-radius: 3px;
+	}
+	iframe{
+		border: 0.5px solid #c7c7c7;
+	}
+	.form-cv{
+		border: 0.5px solid #c7c7c7;
+	}
+	#btn_info, #btn_exp, #btn_edu, #btn_skill, #btn_project, #btn_certificate, #btn_summary{
+		text-align: justify; 
+	}
+	hr{
+		border: 0.5px solid #c7c7c7;
+	}
+	.personal-info{
+		font-size: 18px;
+		border-top: 0.5px solid #c7c7c7;
+		border-bottom: 0.5px solid #c7c7c7;
+	}
+	.form-controls{
+		padding: 0px;
+		font-size: 18px;
+	}
+	.selector{
+		width: 25%;
+	}
+	.nomor{
+		font-size: 18px;
+	}
+	.current{
+		font-size: 18px;
+	}
+	#info_work_ex, #info_education, #info_skill, #info_project, #info_certificate{
+		height: auto;
+		font-size: 18px;
+	}
+	#info_work_ex > div, #info_education > div, #info_skill > div, #info_project > div, #info_certificate > div{
+		display: block;
+		margin: 0px 0px;
+		padding: 0px 0px;
+	}
+	#start_edu > .label-control{
+		display: inline;
+	}
+	.start_edu{
+		font-size: 18px;
+	}
+	.certification_month{
+		font-size: 18px;
+	}
+	/* End CV */
+
+
+
+	.footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 1%;
+		border-top: 0.5px solid #c7c7c7;
+		font-size: 18px;
+	}
+	#error{
+		font-size: 18px;
+	}
+	table{
+		width: 100%;
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 1367px){
+	
+	/* General */
+	.bungkus{
+		width: 100%;
+		border-bottom: 0.7px solid #c7c7c7;
+	}
+	.navigation{
+		width: 100%;
+		padding: 0.5%; 
+	}
+	#link_fisrt > a{
+		font-size: 85%;
+		margin-right: 1.5%;
+	}
+	.link_last{
+		text-decoration: none;
+		margin-left: 1.5%;
+		font-size: 85%;
+	}
+	#link_fisrt{
+		text-align: left;
+		display: inline-block;
+		width: 50%;
+	}
+	#link_last{
+		text-align: right;
+		display: inline-block;
+		width: 47.95%;
+	}
+	.text{
+		font-size: 250%;
+	}
+	.konten_fade{
+		font-size: 120%;
+	}
+	.biodatanya{
+		border: 1% solid #c7c7c7;
+	}
+	.btn{
+		font-size: 100%;
+		padding: 0.5% 1.5%;
+	}
+	.btn-light, .btn-default, .btn-dark{
+		border: 1% solid #1d1d1d;
+		border-radius: 4px;
+	}
+
+	/* End General */
+
+
+	/* Letter */
+	.letter{
+		padding: 1%;
+		font-size: 7px;
+		border: 1% solid #c7c7c7;
+		border-radius: 2px;
+		display: none;
+	}
+	.input-letters{
+		font-size: 250%; 
+	}
+
+	.form-letter{
+		padding: 1%;
+		width: 50%;
+		font-size: 200%;
+		border: 0.5px solid #c7c7c7;
+		border-radius: 1px;
+		display: none;
+	}
+	.label-control{
+		font-size: 200%;
+	}
+	.form-control{
+		font-size: 200%;
+		padding: 0;
+		width: 97%;
+	}
+	.address{
+		width: 98.5%;
+	}
+	/* End Letter */
+
+
+
+
+
+	/* Cv */
+
+	.curiculum{
+		border: 1% solid #c7c7c7;
+		border-radius: 3px;
+	}
+	iframe{
+		border: 1% solid #c7c7c7;
+	}
+	.form-cv{
+		border: 1% solid #c7c7c7;
+	}
+	#btn_info, #btn_exp, #btn_edu, #btn_skill, #btn_project, #btn_certificate, #btn_summary{
+		text-align: justify; 
+	}
+	hr{
+		border: 1% solid #c7c7c7;
+	}
+	.personal-info{
+		font-size: 150%;
+		border-top: 1% solid #c7c7c7;
+		border-bottom: 1% solid #c7c7c7;
+	}
+	.form-controls{
+		padding: 0px;
+		font-size: 150%;
+	}
+	.selector{
+		width: 25%;
+	}
+	.nomor{
+		font-size: 150%;
+	}
+	.current{
+		font-size: 150%;
+	}
+	#info_work_ex, #info_education, #info_skill, #info_project, #info_certificate{
+		height: auto;
+		font-size: 150%;
+	}
+	#info_work_ex > div, #info_education > div, #info_skill > div, #info_project > div, #info_certificate > div{
+		display: block;
+		margin: 0px 0px;
+		padding: 0px 0px;
+	}
+	#start_edu > .label-control{
+		display: inline;
+	}
+	.start_edu{
+		font-size: 150%;
+	}
+	.certification_month{
+		font-size: 150%;
+	}
+	/* End CV */
+
+
+
+	.footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 2%;
+		border-top: 0.5px solid #c7c7c7;
+		font-size: 150%;
+	}
+	#error{
+		font-size: 150%;
+	}
+	table{
+		width: 100%;
+		font-size: 150%;
+	}
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
